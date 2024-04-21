@@ -1,0 +1,21 @@
+.timer__progress {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #3885dd81;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    pointer-events: none;
+    margin-bottom: 32px;
+}
+
+    @media screen and (max-width: 768px) {
+        .timer__progress {
+            width: 230px;
+            height: 230px;
+        }
+    }

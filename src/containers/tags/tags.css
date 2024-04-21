@@ -1,0 +1,71 @@
+:root {
+  --timer-tag-bg: #86739e;
+}
+/* #86739e */
+
+/* Main container styles */
+.timer__tags {
+    height: 3rem;
+    width: 30vw;
+    margin: 2rem auto;
+    background-color: var(--timer-tag-bg);
+    border-radius: 3rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.39);
+  }
+  
+  /* Individual tag styles */
+  .timer__tags_item {
+    all: unset;
+    height: 2rem;
+    flex: 1 0 auto;
+    text-align: center;
+    padding: 8px 12px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    border-radius: 3rem;
+    cursor: pointer;
+  }
+  
+  /* Tag hover state */
+  .timer__tags_item:hover {
+    background-color: var(--timer-tag-bg);
+  }
+  
+  /* Tag focus state */
+  .timer__tags_item:focus {
+    outline: 2px solid white;
+  }
+  
+  /* Responsive adjustments */
+  @media screen and (max-width: 768px) {
+    .timer__tags {
+      width: 50vw;
+      gap: 16px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .timer__tags {
+      width: 81vw;
+    }
+  }
+  
+  @media screen and (max-width: 540px) {
+    .timer__tags {
+      margin-bottom: 5rem;
+    }
+  }
+  
+  @media screen and (max-width: 1024px) and (min-width: 820px),
+         (max-width: 390px) and (min-width: 360px) {
+    .timer__tags {
+      margin-bottom: 6rem;
+    }
+  }
+  

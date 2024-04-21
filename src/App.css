@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    /* background: var(--timer-background); */
+    background-image: url("/MonkeyDLuffyfull.jpg");
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(255, 255, 255, 0.377);
+    background-blend-mode: overlay;
+    color: var(--timer-color);
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+    .timer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+        .timer h1 {
+            font-size: 48px;
+            margin-bottom: 14px;
+            text-align: center;
+        }
+
+            @media screen and (max-width: 768px) {
+                .timer h1 {
+                    font-size: 38px;
+                }
+                
+            }
+
+

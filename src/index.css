@@ -1,0 +1,17 @@
+:root {
+    --timer-color: #444;
+    /* --timer-background: linear-gradient(to right, #334d50, #a8a789c7); */
+    --timer-background: url('../public/assets/Monkey');
+    --timer-gradient: linear-gradient(180deg, #ad0165e8, #1866ccf3);
+  }
+
+
+.timer-gradient {
+    background: var(--timer-gradient);
+    background-clip: text;
+    color: transparent;
+}
+
+.padding-section {
+    padding: 20px;
+}
